@@ -1,0 +1,345 @@
+{
+  "notebook": {
+    "name": "NotebookLM Automation Manual",
+    "url": "https://notebooklm.google.com/notebook/45004306-c9e8-4ce7-8f85-31bd0deea318?authuser=1",
+    "export_date": "2026-01-14"
+  },
+  "uploaded_source_documents": {
+    "business_strategy": [
+      {
+        "name": "Notebook_LM_Overview.md",
+        "type": "Markdown/Text",
+        "description": "Comprehensive manual for Google's Notebook LM as automation and content factory, featuring Goldie 6-in-1 Content Multiplier and 4-hour course transcripts"
+      },
+      {
+        "name": "The Digital Empire Blueprint",
+        "type": "Text/Strategy",
+        "description": "Architectural framework for dual-brand ecosystem (AvatarArts.org and QuantumForgeLabs.org) with revenue projections"
+      },
+      {
+        "name": "AI_Automation_Handoff.md",
+        "type": "Markdown/Text",
+        "description": "Project suite definition including Reddit→Shorts Script Miner, YouTube Topic Miner, Google Maps Leads Enricher"
+      },
+      {
+        "name": "Revenue_Opportunity_Discovery.md",
+        "type": "Markdown/Text",
+        "description": "Strategic discovery report for monetization opportunities (AI Voice Agents, creative education platforms)"
+      },
+      {
+        "name": "Apify Top Actors Research & Win Strategy",
+        "type": "Text/Strategy",
+        "description": "Market analysis for Apify platform, Smart Content Analyzer Pro, $1M Challenge strategies"
+      }
+    ],
+    "technical_infrastructure": [
+      {
+        "name": "AEO_SEO_Content_Optimization.md",
+        "type": "Markdown/Text",
+        "description": "Deep-dive analyses of pythons repository, Answer Engine Optimization (AEO), directory restructuring plans"
+      },
+      {
+        "name": "Workspace_Consolidation_Handoff.md",
+        "type": "Markdown/Text",
+        "description": "Advanced Content-Awareness Intelligence System documentation (23,929 files), reindexing databases, directory flattening"
+      },
+      {
+        "name": "My_Pythons.md",
+        "type": "Markdown/Text",
+        "description": "Collection of specialized Python scripts for function extraction, pydoc generation, automated code repair"
+      },
+      {
+        "name": "Organize_API_list.md",
+        "type": "Markdown/Text",
+        "description": "Master .env template with 100+ service integrations (LLMs, Audio, Art, CRM) with signup links"
+      },
+      {
+        "name": "AIML_provider_options.md",
+        "type": "Markdown/Text",
+        "description": "AI vendors supported by Fabric tool, API configuration templates (OpenAI, Anthropic, Groq)"
+      }
+    ],
+    "seo_marketing_content": [
+      {
+        "name": "2026 SEO Benchmarks",
+        "type": "Text/Report",
+        "description": "Industry data on dominant search intent and average word counts (Healthcare, Finance, SaaS)"
+      },
+      {
+        "name": "YouTube_SEO_prompts.md",
+        "type": "JSON/CSV",
+        "description": "Dataset of specialized prompts for glitchcore aesthetics, viral YouTube descriptions, storyboard frame analysis"
+      },
+      {
+        "name": "Format_merge_CSV.md",
+        "type": "Markdown/Text",
+        "description": "Category-based series and priority scores for keyword trends (Etsy, Redbubble, TeePublic)"
+      },
+      {
+        "name": "Evergreen content: meaning, usefulness, SEO best practices",
+        "type": "Text/Article",
+        "description": "Guide on creating content that remains relevant for steady traffic"
+      },
+      {
+        "name": "Google Click-Through Rates (CTRs) by Ranking Position in 2026",
+        "type": "Text/Report",
+        "description": "Statistics for search ranking positions and generative AI optimization"
+      }
+    ],
+    "creative_frameworks": [
+      {
+        "name": "lyrics_prompt_builder.py",
+        "type": "Python Script",
+        "description": "System for converting song lyrics into cinematic visual prompts"
+      },
+      {
+        "name": "Lyrics-driven_image_framework.md",
+        "type": "Markdown/Text",
+        "description": "Framework for storyboards using Sora and DALL-E"
+      },
+      {
+        "name": "Cinematic_storyboard_analysis.md",
+        "type": "Markdown/Text",
+        "description": "Optimized storyboards for 'iTchy iSle / Stitch by Stitch' with tactile fiber styles and macro lens cues"
+      },
+      {
+        "name": "suno - csv - sheets - scrape.md",
+        "type": "Markdown/Text",
+        "description": "Guides for scraping Suno.ai playlists and syncing music metadata to Google Sheets"
+      },
+      {
+        "name": "🧬_order_in_chaos - Convergence",
+        "type": "Markdown/Text",
+        "description": "Philosophical exploration of science/spirit intersection, AI evolution hero's journey"
+      },
+      {
+        "name": "TTS_workflow_optimization.md",
+        "type": "Markdown/Text",
+        "description": "Adaptive text-to-speech pipeline extracting chapters from 'As A Man Thinketh'"
+      }
+    ],
+    "research_academic": [
+      {
+        "name": "Publications | GroupLens",
+        "type": "Text/Academic List",
+        "description": "Repository of research papers (1986-2025) from University of Minnesota on recommender systems, social computing, AI ethics"
+      },
+      {
+        "name": "Data-Driven Insights: Sentiment Analysis on Brand Evangelism",
+        "type": "Text/Research Paper",
+        "description": "Theoretical foundations of social documents as digital traces of collaborative activity"
+      },
+      {
+        "name": "Managing Global Talent - MDPI",
+        "type": "Text/Academic Paper",
+        "description": "Study on sustainable talent management strategies using human-centric approach"
+      },
+      {
+        "name": "baroni.rows - LingExp",
+        "type": "Text/Dataset",
+        "description": "Extensive list of linguistic tokens and semantic tags for language model analysis"
+      }
+    ]
+  },
+  "external_urls_and_references": {
+    "core_brand_ecosystem": [
+      {
+        "domain": "AvatarArts.org",
+        "description": "Hub for creative expression, AI art, and music",
+        "pages": [
+          "avatararts.org/SEO-revenue/",
+          "avatararts.org/alchemy.html",
+          "avatararts.org/dalle.html",
+          "avatararts.org/disco.html",
+          "avatararts.org/python.html"
+        ]
+      },
+      {
+        "domain": "QuantumForgeLabs.org",
+        "description": "Engine of technical infrastructure and enterprise automation",
+        "pages": ["GitHub.com/@ichoake"]
+      },
+      {
+        "domain": "GPTJunkie.com",
+        "description": "Mastery resource for prompt engineering and GPT hacks"
+      }
+    ],
+    "seo_aeo_research": [
+      {
+        "author": "Martin, O.",
+        "date": "June 23, 2025",
+        "title": "Understanding the Role of Structured Data in AEO",
+        "source": "Goodway Blog",
+        "url": "https://higoodie.com/blog/structured-data-in-aeo"
+      },
+      {
+        "author": "Lai, N.",
+        "date": "Nov 14, 2025",
+        "title": "How To Master Answer Engine Optimization",
+        "source": "Forrester Blog",
+        "url": "https://www.forrester.com/blogs/how-to-master-answer-engine-optimization/"
+      },
+      {
+        "author": "Evan Bailyn",
+        "description": "Founder of generative engine optimization and SEO expert"
+      },
+      {
+        "source": "AIOSEO",
+        "title": "83 SEO Statistics for 2025 (Current & Verified)"
+      },
+      {
+        "source": "First Page Sage",
+        "title": "Google Click-Through Rates (CTRs) by Ranking Position in 2026"
+      },
+      {
+        "source": "Search Atlas",
+        "description": "Educational resources for topical authority and semantic SEO"
+      }
+    ],
+    "github_repositories": [
+      {
+        "url": "github.com/ichoake/python",
+        "description": "Primary automation script collection"
+      },
+      {
+        "url": "github.com/danielmiessler/fabric.git",
+        "description": "Patterns and prompt strategies loader"
+      },
+      {
+        "url": "github.com/1391819/apple-sentiment-analysis",
+        "description": "Reference for sentiment analysis research"
+      }
+    ],
+    "automation_tools": [
+      {
+        "platform": "Apify Platform",
+        "description": "Research for Actorization and monetization challenges",
+        "urls": [
+          "apify.com/challenge#join-the-challenge",
+          "apify.com/ideas",
+          "docs.apify.com/academy/actorization"
+        ]
+      },
+      {
+        "platform": "n8n.io",
+        "title": "Automatic YouTube Shorts Generator",
+        "url": "https://n8n.io/workflows/2856-automatic-youtube-shorts-generator/"
+      },
+      {
+        "platform": "Suno.ai",
+        "description": "Music generation and playlist scraping",
+        "url": "suno.com/@avatararts"
+      }
+    ],
+    "api_cloud_services": [
+      {
+        "category": "AI/ML Providers",
+        "services": [
+          "jina.ai",
+          "groq.com",
+          "openai.com",
+          "deepseek.com",
+          "elevenlabs.io"
+        ]
+      },
+      {
+        "category": "Cloud Infrastructure",
+        "services": [
+          "console.aws.amazon.com",
+          "portal.azure.com",
+          "console.cloud.google.com"
+        ]
+      }
+    ],
+    "academic_research": [
+      {
+        "institution": "GroupLens Research (University of Minnesota)",
+        "title": "Publications 1986-2025",
+        "topics": "Recommender systems, social computing, AI ethics",
+        "url": "grouplens.org/publications/"
+      },
+      {
+        "platform": "ResearchGate",
+        "papers": [
+          "The Holistic AI-Enhanced Marketing Framework Theory",
+          "The Impact of Engagement Metrics and Sentiment Analysis on Brand Evangelism"
+        ]
+      },
+      {
+        "platform": "arXiv.org",
+        "paper": "How Does Emotion Affect Information Communication (2024/2025)"
+      },
+      {
+        "platform": "Zenodo",
+        "title": "The Psychology of Viral Content: Emotional Triggers driving Virality",
+        "year": "2025",
+        "doi": "10.5281/zenodo.17131364"
+      },
+      {
+        "source": "MDPI (Administrative Sciences)",
+        "title": "Managing Global Talent: Innovative Solutions using a Human-Centric Approach"
+      }
+    ],
+    "multimedia_marketing": [
+      {
+        "creator": "Julian Goldie",
+        "platform": "YouTube",
+        "title": "NotebookLM FULL COURSE 4 HOURS (Build & Automate Anything)",
+        "url": "https://www.youtube.com/watch?v=OdMTSmTqexg"
+      },
+      {
+        "platform": "There's An AI For That (TAAFT)",
+        "description": "Tool discovery and launch amplification",
+        "url": "theresanaiforthat.com/launch/"
+      }
+    ],
+    "industry_blogs": [
+      {
+        "source": "WebFX",
+        "title": "2026 SEO Benchmarks"
+      },
+      {
+        "source": "StoryChief",
+        "title": "SEO Analytics in 2026"
+      },
+      {
+        "source": "Search Logistics",
+        "title": "The 5 Step SEO Audit Process for 2026"
+      },
+      {
+        "source": "BlueTone Media",
+        "title": "The 'Evergreen' SEO Strategy"
+      },
+      {
+        "source": "Justinmind",
+        "title": "Visual storytelling for a better UX design"
+      }
+    ],
+    "internal_documentation": [
+      "COMPREHENSIVE_HANDOFF.md",
+      "TRENDING_KEYWORDS_RESEARCH.md",
+      "SEO_AEO_DEPLOYMENT_GUIDE.md",
+      "SYSTEM_MAP.md",
+      "HANDOFF_ADVANCED_INTELLIGENCE_SYSTEM.md",
+      "HOME_DIRECTORY_DEEP_DIVE_REPORT.md"
+    ]
+  },
+  "statistics": {
+    "total_uploaded_documents": 30,
+    "total_external_urls": 50,
+    "categories": {
+      "business_strategy": 5,
+      "technical_infrastructure": 5,
+      "seo_marketing": 5,
+      "creative_frameworks": 6,
+      "research_academic": 4,
+      "github_repos": 3,
+      "automation_tools": 3,
+      "api_services": 8,
+      "academic_research": 5,
+      "multimedia": 2,
+      "industry_blogs": 5,
+      "internal_docs": 6
+    }
+  }
+}

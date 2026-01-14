@@ -72,3 +72,13 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+
+# Notebook exports (may contain personal data)
+notebooklm_export.json
+notebooklm_*_export.json
+*_export.json
+
+# Test/temp files
+*-what-skills-do-i-have.txt
+gol-ia-newq/
+notebooklm-skill/
