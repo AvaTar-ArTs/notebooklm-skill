@@ -15,6 +15,9 @@ Trigger when user:
 - Asks to query their notebooks/documentation
 - Wants to add documentation to NotebookLM library
 - Uses phrases like "ask my NotebookLM", "check my docs", "query my notebook"
+- Wants to export or analyze notebook data
+- Needs to run multiple queries in batch
+- Asks for query history or research analytics
 
 ## ⚠️ CRITICAL: Add Command - Smart Discovery
 
@@ -165,6 +168,29 @@ python scripts/run.py notebook_manager.py stats
 python scripts/run.py ask_question.py --question "..." [--notebook-id ID] [--notebook-url URL] [--show-browser]
 ```
 
+### 🆕 Export Manager (`export_manager.py`) - NEW!
+```bash
+python scripts/run.py export_manager.py summary --notebook-id ID       # Export notebook summary
+python scripts/run.py export_manager.py export-all                     # Export entire library
+python scripts/run.py export_manager.py report [--notebook-id ID]      # Generate markdown report
+python scripts/run.py export_manager.py sources --notebook-id ID       # Export source documents
+```
+
+### 🆕 Query History (`query_history.py`) - NEW!
+```bash
+python scripts/run.py query_history.py list [--notebook-id ID]         # List recent queries
+python scripts/run.py query_history.py stats [--notebook-id ID]        # Show statistics
+python scripts/run.py query_history.py search --keyword KEYWORD        # Search queries
+python scripts/run.py query_history.py clear [--notebook-id ID]        # Clear history
+```
+
+### 🆕 Batch Query (`batch_query.py`) - NEW!
+```bash
+python scripts/run.py batch_query.py run --questions-file FILE --notebook-id ID  # Batch from file
+python scripts/run.py batch_query.py run --questions "Q1" "Q2" --notebook-id ID  # Batch from args
+python scripts/run.py batch_query.py report --results-file FILE                  # Generate report
+```
+
 ### Data Cleanup (`cleanup_manager.py`)
 ```bash
 python scripts/run.py cleanup_manager.py                    # Preview cleanup
@@ -192,8 +218,15 @@ python -m patchright install chromium
 
 All data stored in `~/.claude/skills/notebooklm/data/`:
 - `library.json` - Notebook metadata
+- `query_history.json` - Query tracking data (NEW!)
 - `auth_info.json` - Authentication status
 - `browser_state/` - Browser cookies and session
+
+All exports saved to `~/.claude/skills/notebooklm/exports/`:
+- `*_summary_*.json` - Notebook summaries (NEW!)
+- `*_report_*.md` - Markdown reports (NEW!)
+- `batch_query_*.json` - Batch query results (NEW!)
+- `notebooklm_complete_export_*.json` - Full backups (NEW!)
 
 **Security:** Protected by `.gitignore`, never commit to git.
 
@@ -255,15 +288,31 @@ Synthesize and respond to user
 - Manual upload required (user must add docs to NotebookLM)
 - Browser overhead (few seconds per question)
 
+## 🆕 Enhanced Features (v2.0)
+
+**Major improvements added:**
+
+1. **Export Manager** - Comprehensive data export and reporting
+2. **Query History** - Track all queries with analytics and search
+3. **Batch Query** - Run multiple queries in one session
+4. **Markdown Reports** - Human-readable documentation generation
+5. **Usage Analytics** - Detailed statistics and insights
+
+See `ENHANCEMENTS.md` for full documentation of new features!
+
 ## Resources (Skill Structure)
 
 **Important directories and files:**
 
-- `scripts/` - All automation scripts (ask_question.py, notebook_manager.py, etc.)
+- `scripts/` - All automation scripts
+  - Core: `ask_question.py`, `notebook_manager.py`, `auth_manager.py`
+  - NEW: `export_manager.py`, `query_history.py`, `batch_query.py`
 - `data/` - Local storage for authentication and notebook library
+- `exports/` - NEW: Generated reports and export files
 - `references/` - Extended documentation:
   - `api_reference.md` - Detailed API documentation for all scripts
   - `troubleshooting.md` - Common issues and solutions
   - `usage_patterns.md` - Best practices and workflow examples
+- `ENHANCEMENTS.md` - NEW: Complete documentation of v2.0 features
 - `.venv/` - Isolated Python environment (auto-created on first run)
 - `.gitignore` - Protects sensitive data from being committed
