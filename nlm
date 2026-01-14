@@ -1,0 +1,151 @@
+#!/usr/bin/env bash
+# NotebookLM CLI wrapper
+# Usage: nlm [command] [args...]
+
+# Always use the actual skills directory, not the symlink location
+SCRIPT_DIR="/Users/steven/.claude/skills/notebooklm"
+cd "$SCRIPT_DIR" || exit 1
+
+case "$1" in
+  ask|query|q)
+    shift
+    python scripts/run.py ask_question.py --question "$*"
+    ;;
+  
+  list|ls)
+    python scripts/run.py notebook_manager.py list
+    ;;
+  
+  add)
+    shift
+    python scripts/run.py notebook_manager.py add "$@"
+    ;;
+  
+  search)
+    shift
+    python scripts/run.py notebook_manager.py search --query "$*"
+    ;;
+  
+  activate|use)
+    python scripts/run.py notebook_manager.py activate --id "$2"
+    ;;
+  
+  stats)
+    python scripts/run.py query_history.py stats
+    ;;
+  
+  history)
+    python scripts/run.py query_history.py list --limit "${2:-20}"
+    ;;
+  
+  report)
+    if [ -n "$2" ]; then
+      python scripts/run.py export_manager.py report --notebook-id "$2"
+    else
+      python scripts/run.py export_manager.py report
+    fi
+    ;;
+  
+  batch)
+    shift
+    python scripts/run.py batch_query.py run "$@"
+    ;;
+  
+  backup)
+    python scripts/run.py export_manager.py export-all
+    ;;
+  
+  auth)
+    python scripts/run.py auth_manager.py status
+    ;;
+  
+  profile)
+    shift
+    case "$1" in
+      list|ls)
+        python scripts/run.py profile_manager.py list
+        ;;
+      switch|use)
+        python scripts/run.py profile_manager.py switch --name "$2"
+        ;;
+      current|show)
+        python scripts/run.py profile_manager.py current
+        ;;
+      create|new)
+        shift
+        python scripts/run.py profile_manager.py create "$@"
+        ;;
+      info)
+        python scripts/run.py profile_manager.py info --name "$2"
+        ;;
+      *)
+        echo "Profile commands: list, switch <name>, current, create, info <name>"
+        echo "Examples:"
+        echo "  nlm profile list"
+        echo "  nlm profile switch avatararts"
+        echo "  nlm profile current"
+        ;;
+    esac
+    ;;
+  
+  help|--help|-h)
+    cat << EOF
+NotebookLM CLI - Query your NotebookLM notebooks from the command line
+
+USAGE:
+  nlm <command> [arguments...]
+
+COMMANDS:
+  ask|query|q <question>        Ask a question to active notebook
+  list|ls                       List all notebooks
+  add <args>                    Add notebook (see notebook_manager.py add --help)
+  search <query>                Search notebooks by keyword
+  activate|use <id>             Set active notebook
+  stats                         Show query statistics
+  history [limit]               Show recent queries (default: 20)
+  report [notebook-id]          Generate markdown report
+  batch <args>                  Run batch queries
+  backup                        Backup entire library
+  auth                          Check authentication status
+  profile <cmd>                 Manage profiles (multi-account support)
+  help                          Show this help
+
+PROFILE COMMANDS (Multi-Account Support):
+  nlm profile list              List all profiles
+  nlm profile switch <name>     Switch to a different profile/account
+  nlm profile current           Show current active profile
+  nlm profile create <args>     Create a new profile
+  nlm profile info <name>       Show profile details
+
+EXAMPLES:
+  nlm ask What is this notebook about?
+  nlm list
+  nlm activate notebooklm-automation-manual
+  nlm stats
+  nlm history 50
+  nlm report notebooklm-automation-manual
+  nlm backup
+
+MULTI-ACCOUNT EXAMPLES:
+  nlm profile list
+  nlm profile switch avatararts
+  nlm profile switch personal
+  nlm profile current
+
+PROFILES:
+  • default (Currently authenticated account) [CURRENT]
+  • avatararts (me@avatararts.org)
+  • personal (sjchaplinski@gmail.com)
+
+FULL DOCS:
+  cat ~/.claude/skills/notebooklm/USE_FROM_CLI.md
+  cat ~/.claude/skills/notebooklm/MULTI_ACCOUNT.md
+EOF
+    ;;
+  
+  *)
+    echo "Unknown command: $1"
+    echo "Try: nlm help"
+    exit 1
+    ;;
+esac
